@@ -1,0 +1,118 @@
+.container__search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.container__search__input {
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--backgroud-secondary);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon__search {
+  position: absolute;
+  color: var(--text-color);
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+}
+
+.input__search {
+  background-color: transparent;
+  width: 100%;
+  padding: 20px;
+  padding-left: 50px;
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.input__search::placeholder {
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+/* Filter */
+
+.dropdown {
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--backgroud-secondary);
+  border-radius: 3px;
+  color: var(--text-color);
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdown__selected__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown__icon {
+  transform: rotate(180deg);
+  align-self: center;
+  transition: 200ms ease-in-out;
+}
+
+.dropdown:hover .dropdown__icon {
+  transform: rotate(0deg);
+}
+
+.dropdown__list {
+  border-radius: 3px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease-in-out, visibility 0s linear 300ms;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transform-origin: bottom;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--backgroud-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.radio__region {
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+.radio__region:hover {
+  color: var(--hover-color);
+}
+
+input[type='radio'] {
+  appearance: none;
+}
+
+.dropdown:focus-within,
+.dropdown:hover .dropdown__list {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 300ms ease-in-out, visibility 0s linear 0s;
+}
+
+@media (width > 768px) {
+  .container__search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container__search__input {
+    width: 500px;
+  }
+}

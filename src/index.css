@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&family=Poppins:wght@400;700&family=Roboto&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font-size-mobile */
+  --fs-mobile: 14px;
+
+  /* font-size-desktop */
+  --fs-desktop: 18px;
+
+  /* hover-color */
+  --hover-color: hsl(34, 54%, 51%);
+
+  /* Light Mode Text */
+  --text-color: hsl(200, 15%, 8%);
+
+  /* Light Mode Background */
+  --background-primary: hsl(0, 0%, 98%);
+
+  /* Light Mode Elements */
+  --backgroud-secondary: hsl(0, 0%, 100%);
+}
+
+body.dark {
+  /* Text Dark Mode */
+  --text-color: hsl(0, 0%, 100%);
+
+  /* Dark Mode Background */
+  --background-primary: hsl(207, 26%, 17%);
+
+  /* Dark Mode Elements */
+  --backgroud-secondary: hsl(208, 23%, 22%);
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-primary);
+  font-family: 'Nunito Sans', sans-serif;
+  overflow-x: hidden;
+  font-size: var(--fs-mobile);
+}
+
+#root {
+  position: relative;
+}
+
+/* Common class */
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+@media (width > 768px) {
+  body {
+    font-size: var(--fs-desktop);
+  }
+}

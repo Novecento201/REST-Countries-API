@@ -1,0 +1,23 @@
+.theme__btn {
+  display: flex;
+  gap: 8px;
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: calc(var(--fs-mobile) * 0.8);
+  transition: 250ms ease-in-out;
+}
+.theme__btn svg {
+  align-self: center;
+}
+.theme__btn:hover {
+  color: var(--hover-color);
+  scale: 1.1;
+}
+
+@media (width > 768px) {
+  .theme__btn {
+    font-size: calc(var(--fs-desktop) * 1.1);
+  }
+}

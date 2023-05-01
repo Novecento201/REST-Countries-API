@@ -1,0 +1,16 @@
+.home__container {
+  position: relative;
+  min-height: 90vh;
+}
+
+.home__results {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.home__no-results {
+  font-weight: bold;
+}
