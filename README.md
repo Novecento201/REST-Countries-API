@@ -7,9 +7,9 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 <img src="./src/screenshots/screen.jpg" alt="REST Countries API  desktop preview" >
 
-<!-- ## Link
+## Link
 
-- [Live Site URL]() -->
+- [Live Site URL](https://rest-countries-api-novecent01.netlify.app/)
 
 ## Built with
 
