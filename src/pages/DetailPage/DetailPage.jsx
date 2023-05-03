@@ -56,7 +56,7 @@ const DetailPage = () => {
               >
                 <img
                   className="country__img"
-                  src={c.flags.png}
+                  src={c.flags.svg}
                   alt={`Flag of ${c.name.common}`}
                 />
                 <div className="country__info">

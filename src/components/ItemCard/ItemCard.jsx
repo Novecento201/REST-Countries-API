@@ -12,7 +12,7 @@ const ItemCard = ({
     >
       <img
         className="flag__country__card"
-        src={flags.png}
+        src={flags.svg}
         alt={`Flag of ${name.official}`}
       />
       <div className="details__country__card">
