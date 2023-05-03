@@ -1,6 +1,7 @@
 .detail__container {
   position: relative;
   min-height: 90vh;
+  padding-bottom: 2rem;
 }
 
 .detail__btn {

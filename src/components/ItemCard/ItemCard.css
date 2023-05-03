@@ -20,6 +20,7 @@
   height: 160px;
   object-fit: cover;
   border-radius: 5px 5px 0 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .details__country__card {
